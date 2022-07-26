@@ -30,14 +30,14 @@
 ```
 thm{b63670f7192689782a45d8044c63197f}
 ```
-** in the source code of http://10.10.201.114 **<br />
+`in the source code of [default page on port 80](http://10.10.201.114)`<br />
 
 > second flag -<br />
 
 ```
 thm{678d0231fb4e2150afc1c4e336fcf44d}
 ```
-** in the hidden files on anonymous login with ftp `ls  -la` **<br />
+(in the hidden files on anonymous login with ftp `ls  -la`)<br />
 
 -----------------------
 ##### Credentials -<br />
@@ -49,7 +49,7 @@ password: cinderella<br />
 username: gcrawford<br />
 password: evelina<br />
 
-*** via hydra ***<br />
+[via hydra]<br />
 
 -----------------------
 > third flag -<br />
@@ -57,7 +57,7 @@ password: evelina<br />
 ```
 thm{12361ad240fec43005844016092f1e05}
 ```
-** in the hidden files in ftp login with rcampbell `ls -la` ** <br />
+(in the hidden files in ftp login with rcampbell `ls -la`) <br />
 
 -----------------------
 ##### Login via ssh with rcampbell [rcampbell:cinderella] and search for `capabilities`<br />
@@ -102,38 +102,38 @@ sudo openssl req -engine ./shell.so
 ```
 thm{b94f8d2e715973f8bc75fe099c8492c4}
 ```
-** in the root directory **<br />
+`in the root directory`<br />
 > fifth flag -<br />
 
 ```
 thm{d8deb5f0526ec81f784ce68e641cde40}
 ```
-** in the home directory of gcrawford, within business.txt **<br />
+`in the home directory of gcrawford, within business.txt`<br />
 
 > sixth flag - <br />
 
 ```
 thm{879f3238fb0a4bf1c23fd82032d237ff}
 ```
-** in the home directory of production **<br />
+`in the home directory of production`<br />
 
 > seventh flag - <br />
 
 ```
 thm{3ce2fe64055d3b543360c3fc880194f8}
 ```
-** in the home directory of tryhackme **<br />
+(in the home directory of tryhackme)<br />
 
 > eighth flag -
 
 ```
 thm{2124a8091b664c98a0e5bdbb7a4fa1cb}
 ```
-** in /etc/vsftpd.conf **<br />
+`in /etc/vsftpd.conf`<br />
 
 > ninth flag -
 
 ```
 thm{068754683abe0bf81fb621ce55a91964}
 ```
-** in /etc/ssh/sshd_config **
+`in /etc/ssh/sshd_config`
