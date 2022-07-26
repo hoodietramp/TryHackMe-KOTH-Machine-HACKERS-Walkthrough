@@ -28,14 +28,14 @@
 > first flag -<br />
 
 ```
-thm{b63670f7192689782a45d8044c63197f}
+thm{b6.............................}
 ```
 `in the source code of default page on port 80`<br />
 
 > second flag -<br />
 
 ```
-thm{678d0231fb4e2150afc1c4e336fcf44d}
+thm{67.............................}
 ```
 `in the hidden files on anonymous login with ftp ls  -la`<br />
 
@@ -55,7 +55,7 @@ password: evelina<br />
 > third flag -<br />
 
 ```
-thm{12361ad240fec43005844016092f1e05}
+thm{12.............................}
 ```
 `in the hidden files in ftp login with rcampbell ls -la` <br />
 
