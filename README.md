@@ -106,34 +106,34 @@ thm{b94f8d2e715973f8bc75fe099c8492c4}
 > fifth flag -<br />
 
 ```
-thm{d8deb5f0526ec81f784ce68e641cde40}
+thm{d8.............................}
 ```
 `in the home directory of gcrawford, within business.txt`<br />
 
 > sixth flag - <br />
 
 ```
-thm{879f3238fb0a4bf1c23fd82032d237ff}
+thm{87.............................}
 ```
 `in the home directory of production`<br />
 
 > seventh flag - <br />
 
 ```
-thm{3ce2fe64055d3b543360c3fc880194f8}
+thm{3c.............................}
 ```
 `in the home directory of tryhackme`<br />
 
 > eighth flag -
 
 ```
-thm{2124a8091b664c98a0e5bdbb7a4fa1cb}
+thm{21.............................}
 ```
 `in /etc/vsftpd.conf`<br />
 
 > ninth flag -
 
 ```
-thm{068754683abe0bf81fb621ce55a91964}
+thm{06.............................}
 ```
 `in /etc/ssh/sshd_config`
