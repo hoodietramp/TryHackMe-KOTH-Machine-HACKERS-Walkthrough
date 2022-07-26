@@ -100,7 +100,7 @@ sudo openssl req -engine ./shell.so
 > fourth flag - <br />
 
 ```
-thm{b94f8d2e715973f8bc75fe099c8492c4}
+thm{b9.............................}
 ```
 `in the root directory`<br />
 > fifth flag -<br />
