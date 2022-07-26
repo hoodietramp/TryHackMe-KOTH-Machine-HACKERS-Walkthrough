@@ -83,6 +83,8 @@ ssh -i id_rsa gcrawford@10.10.228.111
 
 ##### privilege escalation of `gcrawford` user cuz of sudo ability over `nano`<br/>
 
+`sudo -l`
+
 We can see nano's [Gtfo-Bins](https://gtfobins.github.io/gtfobins/nano/)
 
 ```
