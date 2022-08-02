@@ -160,7 +160,7 @@ First, let's try to check for `sudo abilities` of user production by running com
 
 ![image](images/productionSudo.png)
 
-We see `openssl` in sudo list, we can abuse it to get root let's check it's [Gtfo-Bins For Library Load Using Openssl](https://gtfobins.github.io/gtfobins/openssl/#library-load)
+We see `openssl` in sudo list, we can abuse it to get root let's check [Gtfo-Bins For Openssl And How To Use It To Load Shared Libraries](https://gtfobins.github.io/gtfobins/openssl/#library-load)
 
 Check out this blog for more on it [ld_preload-privesc](https://www.hackingarticles.in/linux-privilege-escalation-using-ld_preload/)<br />
 
